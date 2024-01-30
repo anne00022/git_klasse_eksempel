@@ -3,9 +3,14 @@
 }
 
 h1 {
-  color: blue;
+  color: rgb(216, 216, 255);
 }
 
 body {
   background-color: darkcyan;
+}
+
+p {
+  color: rgb(255, 106, 0);
+  font-weight: 700;
 }
