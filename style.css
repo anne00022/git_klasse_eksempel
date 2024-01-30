@@ -1,20 +1,160 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-h1 {
-  color: rgb(13, 95, 161);
-}
-
-h2 {
-  color: rgb(106, 188, 255);
+img {
+  width: 100%;
 }
 
 body {
-  background-color: rgba(215, 211, 197, 0.487);
+  font-family: "Bagel Fat One", system-ui;
+  font-family: "Krona One", sans-serif;
+  font-family: "Lilita One", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #13293d;
 }
 
-p {
-  color: rgb(88, 88, 88);
-  font-weight: 200;
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #eff6fb;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  color: #13293d;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation a:hover {
+  color: #d0e2f1;
+}
+
+/* PRODUKT.HTML */
+
+.breadcrumb {
+  list-style: none;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  margin-right: 10px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #13293d;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item::after {
+  content: "/";
+  margin-left: 10px;
+}
+
+.breadcrumb-item:last-child::after {
+  content: none;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+.produkt_grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 30px;
+}
+
+.p_padding {
+  margin-bottom: 40px;
+  font-weight: 100;
+}
+
+/* KATEGORIER */
+.k_padding {
+  padding: 10px 60px;
+  font-weight: 100;
+}
+
+.kategori_grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 120px;
+  margin: 80px 60px;
+}
+
+.knap_kategori,
+button {
+  background-color: #526877aa;
+  color: #eff6fb;
+  text-decoration: none;
+  padding: 40px 117px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.knap_kategori:hover,
+button:hover {
+  color: #18435a;
+  cursor: pointer;
+}
+
+/* PRODUKTLISTE */
+
+.produktliste_grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin: 10px 60px;
+}
+
+.p_list_padding {
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+/* MOBIL */
+
+@media screen and (max-width: 768px) {
+  .produktliste_grid,
+  .kategori_grid,
+  .produkt_grid {
+    display: unset;
+  }
 }
