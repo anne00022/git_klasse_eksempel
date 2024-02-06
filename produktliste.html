@@ -32,69 +32,41 @@
         </div>
     </header>
 
-    <main>
-        <!-- Hjælp fra ChatGPT -->
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Hjem</a></li>
-                <li class="breadcrumb-item"><a href="kategori.html">Kategori</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Produktliste</li>
-            </ol>
-        </nav>
 
-        <div class="produktliste_grid">
+    <!-- Hjælp fra ChatGPT -->
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Hjem</a></li>
+            <li class="breadcrumb-item"><a href="kategori.html">Kategori</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Produktliste</li>
+        </ol>
+    </nav>
 
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
-
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
-
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
+    <h1 class="h1_list">Produktkategori</h1>
 
 
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
+    <main class="produktliste_grid">
 
 
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
+        <template id="smallProductTemplate">
+            <a href="produkt.html" class="link_produkt">
+                <article class="smallProduct">
+                    <img src="" alt="" class="p_list_padding">
+                    <h3 class="p_list_padding">Name</h3>
+                    <h5 class="p_list_padding">Brand</h5>
+                    <h6 class="p_list_padding"><span>Prev.</span>Price</h6>
+                    <div class="discounted p_list_padding">
+                        <p>Now DKK 1499,-</p>
+                        <p>-34%</p>
+                    </div>
+                </article>
+            </a>
+        </template>
 
-
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
-
-
-            <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" class="p_list_padding">
-                <h3 class="p_list_padding">Produktnavn</h3>
-                <h6 class="p_list_padding">399DKK</h6>
-            </div>
-
-        </div>
     </main>
 
 
-    <script src="script.js"></script>
+    <script src="liste.js"></script>
 
 </body>
 

@@ -7,6 +7,11 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #13293d;
+}
+
 body {
   font-family: "Bagel Fat One", system-ui;
   font-family: "Krona One", sans-serif;
@@ -34,7 +39,7 @@ body {
   font-weight: 900;
   letter-spacing: 0.3rem;
   text-decoration: none;
-  color: #13293d;
+  color: #19344d;
 }
 .navigation {
   list-style: none;
@@ -95,7 +100,8 @@ body {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px 30px;
+  padding: 10px 60px;
+  gap: 30px;
 }
 
 .p_padding {
@@ -139,7 +145,7 @@ button:hover {
 .produktliste_grid {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 60px;
   margin: 10px 60px;
 }
@@ -147,6 +153,17 @@ button:hover {
 .p_list_padding {
   margin-bottom: 10px;
   font-weight: 100;
+}
+
+.soldOut {
+  color: blue;
+}
+
+.h1_list {
+  margin-left: 60px;
+  margin-bottom: 50px;
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 /* MOBIL */
