@@ -109,6 +109,11 @@ body {
   font-weight: 100;
 }
 
+.img_produkt {
+  height: 700px;
+  width: auto;
+}
+
 /* KATEGORIER */
 .k_padding {
   padding: 10px 60px;
@@ -155,15 +160,55 @@ button:hover {
   font-weight: 100;
 }
 
-.soldOut {
-  color: blue;
-}
-
 .h1_list {
   margin-left: 60px;
   margin-bottom: 50px;
   font-weight: 200;
   font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+/* UDSOLGT */
+
+.soldout {
+  display: none;
+}
+
+article.soldOut .soldout {
+  display: block;
+  color: red;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+article.fade img {
+  display: block;
+  filter: opacity(40%);
+}
+
+/* UDSALGS */
+
+.discount {
+  display: none;
+}
+
+article.disCount .discount {
+  display: block;
+  color: rgb(13, 95, 9);
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 /* MOBIL */
@@ -173,5 +218,9 @@ button:hover {
   .kategori_grid,
   .produkt_grid {
     display: unset;
+  }
+
+  article {
+    padding: 20px;
   }
 }

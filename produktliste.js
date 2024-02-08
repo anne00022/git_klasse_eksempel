@@ -21,10 +21,18 @@ function showProduct(product) {
   copy.querySelector("h3").textContent = product.productdisplayname;
   copy.querySelector("h5").textContent = product.brandname;
   copy.querySelector("h6").textContent = product.price + " DKK";
-  copy.querySelector("div.discounted").textContent = "-" + product.discount + "%";
 
+  //udsolgt
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
+    copy.querySelector("article").classList.add("fade");
+    copy.querySelector("div.soldout").textContent = "Sold Out";
+  }
+
+  //udsalg
+  if (product.discount) {
+    copy.querySelector("article").classList.add("disCount");
+    copy.querySelector("div.discount").textContent = "-" + product.discount + "%";
   }
 
   copy.querySelector(".link_produkt").setAttribute("href", `produkt.html?id=${product.id}`);
